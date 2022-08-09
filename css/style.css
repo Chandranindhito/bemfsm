@@ -175,6 +175,7 @@ footer .text-center {
 
 
 /* --------------------- Halaman Visi Misi---------------------- */
+/* section : tentang */
 .tentang {
   width: 100%;
   margin: auto;
@@ -184,119 +185,147 @@ footer .text-center {
   background-color: #203E58;
 }
 
-.about {
-  padding-top: 75px;
-  padding-bottom: 100px;
-}
-
-.about .container .row .col-md-8{
-  padding-top: 1rem;
-}
-
-.about .container .row .col-md-8 h3 {
-  color: black;
-  text-align: left;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.about .container .row .col-md-8 h2 {
-  font-size: 50px;
-  color: black;
-  font-weight: bold;
-  text-align: left;
-}
-
 .tentang .container h1 {
   color: #fff;
   font-size: 60px;
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
-  .about .container .row .col-md-8 h2{
-    text-align: center;
-  }
-
-  .about .container .row .col-md-8 h3{
-    text-align: center;
-  }
-
+@media (max-width: 768px){
   .tentang .container h1{
     font-size: 40px;
   }
 }
 
-/* visi */
-.visi {
+/* Section : content */
+.content .container{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.content .container .row{
+  padding-top: 5rem;
+  padding-top: 3rem;
+}
+
+.about {
   padding-top: 75px;
-  padding-bottom: 75px;
+  padding-bottom: 100px;
 }
 
-.visi .container .row .col-md-8 h2 {
-  font-size: 45px;
-  color: black;
-  text-align: left;
-  font-weight: bold;
-  padding-left: 5rem;
-}
-
-.visi .container .row .col-md-8 h3 {
-  color: black;
+.content .container .row .about h3 {
+  color: #203E58;
   text-align: left;
   font-size: 18px;
   font-weight: 500;
-  padding-left: 5rem;
 }
 
-.visi .container .row .col-md-4 img {
-  width: 200px;
+.content .container .row .about h2 {
+  font-size: 50px;
+  color: #203E58;
+  font-weight: bold;
+  text-align: left;
+}
+
+.content .container .row .about img{
+  width: 200px
 }
 
 @media (max-width: 768px) {
-  .visi .container .row .col-md-8 h2{
+  .content .container .row .about h2{
     text-align: center;
-    padding-left: 0;
   }
 
-  .visi .container .row .col-md-8 h3{
+  .content .container .row .about h3{
     text-align: center;
-    padding-left: 0;
+  }
+
+  .content .container .row #logoabout{
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+}
+
+/* visi */
+.visi {
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+
+.content .container .row .visi h2 {
+  font-size: 45px;
+  color: #203E58;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content .container .row .visi h3 {
+  color: #203E58;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.content .container .row .visi img {
+  width: 175px;
+}
+
+@media (max-width: 768px) {
+  .content .container .row .visi h2{
+    text-align: center;
+  }
+
+  .content .container .row .visi h3{
+    text-align: center;
+  }
+  
+  .content .container .row #logovisi{
+    padding-top: 25px;
+    padding-bottom: 10px;
   }
 }
 
 /* misi */
 .misi {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 
-.misi .container .row .col-md-8 h2 {
+.content .container .row .misi h2 {
   font-size: 45px;
-  color: black;
+  color: #203E58;
   text-align: left;
   font-weight: bold;
 }
 
-.misi .container .row .col-md-8 ul {
-  color: black;
+.content .container .row .misi h3 {
+  color: #203E58;
   text-align: left;
   font-size: 18px;
   font-weight: 500;
 }
 
-.misi .container .row .col-md-4 img {
-  width: 300px;
+.content .container .row .misi img {
+  width: 250px;
 }
 
 @media (max-width: 768px) {
-  .misi .container .row .col-md-8 h2{
+  .content .container .row .misi h2{
     text-align: center;
+  }
+
+  .content .container .row #logomisi{
+    padding-top: 200px;
+    padding-bottom: 10px;
+  }
+
+  .content .container .row #textmisi{
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 }
 
 /* Nilai Organisasi */
-
 .nilai {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -305,17 +334,18 @@ footer .text-center {
 .nilai .container .row .col h2{
   font-weight: bold;
   font-size: 45px;
+  color: #203E58;
 }
 
 .nilai .container .row .col-md-4 .card .card-body p {
-  color: black;
+  color: #fff;
   text-align: center;
   font-weight: 400;
 }
 
 .nilai .container .row .col-md-4 .card .card-body h3 {
   font-size: 30px;
-  color: black;
+  color: #fff;
   text-align: center;
   font-weight: bold;
 }
@@ -350,12 +380,6 @@ footer .text-center {
   width: 300px;
   align-content: center;
 }
-
-
-
-
-
-
 
 
 /* Halaman PMO */
