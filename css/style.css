@@ -20,19 +20,21 @@
 }
 
 .navbar{
-  background: #263435;
+  background:#78C0E0;
 }
 
-.navbar .container .navbar-brand {
-  color: #fff;
+.navbar .container .collapse ul li{
+  font-weight: 500;
+  color: #00272B;
 }
 
 .collapse ul li {
   list-style: none;
   position: relative;
+  color: #00272B;
 }
 
-.collapse ul li::after {
+/* .collapse ul li::after {
   content: '';
   background: #263435;
   width: 0%;
@@ -44,7 +46,7 @@
 
 .collapse ul li:hover::after {
   width: 100%;
-}
+} */
 
 .dropdown-menu li {
   position: relative;
@@ -68,8 +70,8 @@
 
 @media (max-width: 768px) {
   .dropdown-menu .dropdown-submenu {
-    display: block;
-    background: #fff;
+    display: list-item;
+    background: #A9CEF4;
   }
 } 
 
@@ -85,22 +87,25 @@
 
 .text-box h1 {
   font-size: 50px;
+  font-weight: bold;
 }
 
 .text-box h3 {
   font-size: 30px;
+  font-weight: 600;
 }
 
 .text-box p {
   font-size: 20px;
   margin: 10px 0 40px;
+  font-weight: 300;
 }
 
 .hero-btn {
   display: inline-block;
   text-decoration: none;
-  background-color: #E7DFD4;
-  color: #203E58;
+  background-color: #fff;
+  color: #2D3047;
   border: 1px solid #fff;
   padding: 12px 34px;
   font-size: 13px;
@@ -110,9 +115,9 @@
 }
 
 .hero-btn:hover {
-  border: 1px solid #263435;
-  background: #263435;
-  color: #fff;
+  border: 1px solid #85BFF7;
+  background: #78C0E0;
+  color: #2D3047;
   transition: 1s;
 }
 
@@ -187,7 +192,7 @@ footer .text-center {
 
 .tentang .container h1 {
   color: #fff;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
 }
 
@@ -214,7 +219,7 @@ footer .text-center {
 }
 
 .content .container .row .about h3 {
-  color: #203E58;
+  color: #00272B;
   text-align: left;
   font-size: 18px;
   font-weight: 500;
@@ -222,7 +227,7 @@ footer .text-center {
 
 .content .container .row .about h2 {
   font-size: 50px;
-  color: #203E58;
+  color: #00272B;
   font-weight: bold;
   text-align: left;
 }
@@ -234,6 +239,7 @@ footer .text-center {
 @media (max-width: 768px) {
   .content .container .row .about h2{
     text-align: center;
+    font-size: 35px;
   }
 
   .content .container .row .about h3{
@@ -253,14 +259,14 @@ footer .text-center {
 }
 
 .content .container .row .visi h2 {
-  font-size: 45px;
-  color: #203E58;
+  font-size: 50px;
+  color: #00272B;
   text-align: left;
   font-weight: bold;
 }
 
 .content .container .row .visi h3 {
-  color: #203E58;
+  color:#00272B;
   text-align: left;
   font-size: 18px;
   font-weight: 500;
@@ -273,6 +279,7 @@ footer .text-center {
 @media (max-width: 768px) {
   .content .container .row .visi h2{
     text-align: center;
+    font-size: 35px;
   }
 
   .content .container .row .visi h3{
@@ -292,14 +299,14 @@ footer .text-center {
 }
 
 .content .container .row .misi h2 {
-  font-size: 45px;
-  color: #203E58;
+  font-size: 50px;
+  color: #00272B;
   text-align: left;
   font-weight: bold;
 }
 
 .content .container .row .misi h3 {
-  color: #203E58;
+  color: #00272B;
   text-align: left;
   font-size: 18px;
   font-weight: 500;
@@ -312,6 +319,7 @@ footer .text-center {
 @media (max-width: 768px) {
   .content .container .row .misi h2{
     text-align: center;
+    font-size: 35px;
   }
 
   .content .container .row #logomisi{
@@ -334,7 +342,7 @@ footer .text-center {
 .nilai .container .row .col h2{
   font-weight: bold;
   font-size: 45px;
-  color: #203E58;
+  color: #26081C;
 }
 
 .nilai .container .row .col-md-4 .card .card-body p {
@@ -370,19 +378,103 @@ footer .text-center {
 
 
 /* Halaman inti */
-.kabem{
+.headerinti{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 4rem;
+  background-color: #203E58;
+}
+
+.headerinti .container h1{
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.inti {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.kabem .container .row .col-md-5 img{
-  height: 400px;
-  width: 300px;
-  align-content: center;
+.inti .container .row .col-md-8 {
+  padding-top: 3rem;
+}
+
+.inti .container .row .col-md-8 h3 {
+  color: black;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.inti .container .row .col-md-4 img {
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  .inti .container .row .col-md-8 h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+/* section baganinti */
+.baganinti .container .row .col-md-4 {
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.baganinti .container .row .col-md-4 .card{
+  background: #f7e69a;
+}
+
+.baganinti .container .row .col-md-8 .card{
+  background: #f7e69a;
+}
+
+.baganinti .container .row .col-md-8{
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.baganinti .container .row .col-md-4 h2{
+  font-size: 35px;
+  color: #00272B;
+  text-align: left;
+  font-weight: 600;
+}
+
+.baganinti .container .row .col-md-4 h5{
+  color: #00272B;
+  text-align: center;
+  font-weight: 600;
+}
+
+.baganinti .container .row .col-md-8 h5{
+  color: #00272B;
+  text-align: center;
+  font-weight: 600;
+}
+
+.baganinti .container .row .col-md-4 .card .card-body{
+  color: #00272B;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .baganinti .container .row .col-md-4 h2{
+    font-size: 25px;
+    text-align: center;
+  }
 }
 
 
-/* Halaman PMO */
+/*---------------------Halaman PMO------------------------*/
 .headerpmo{
   width: 100%;
   margin: auto;
@@ -425,7 +517,62 @@ footer .text-center {
   }
 }
 
-/* Halaman KMI */
+/* Section baganpmo */
+/* section baganpmo */
+.baganpmo .container .row .col-md-4 {
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.baganpmo .container .row .col-md-4 .card{
+  background: #f7e69a;
+}
+
+.baganpmo .container .row .col-md-8 .card{
+  background: #f7e69a;
+}
+
+.baganpmo .container .row .col-md-8{
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.baganpmo .container .row .col-md-4 h2{
+  font-size: 35px;
+  color: #00272B;
+  text-align: left;
+  font-weight: 600;
+}
+
+.baganpmo .container .row .col-md-4 h5{
+  color: #00272B;
+  text-align: center;
+  font-weight: 600;
+}
+
+.baganpmo .container .row .col-md-8 h5{
+  color: #00272B;
+  text-align: center;
+  font-weight: 600;
+}
+
+.baganpmo .container .row .col-md-4 .card .card-body{
+  color: #00272B;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .baganpmo .container .row .col-md-4 h2{
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+
+/*-------------------- Halaman KMI -------------------*/
 .headerkmi{
   width: 100%;
   margin: auto;
@@ -464,6 +611,60 @@ footer .text-center {
 @media (max-width: 768px) {
   .kmi .container .row .col-md-8 h3 {
     font-size: 14px;
+    text-align: center;
+  }
+}
+
+/* section bagankmi */
+/* section bagankmi */
+.bagankmi .container .row .col-md-4 {
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.bagankmi .container .row .col-md-4 .card{
+  background: #f7e69a;
+}
+
+.bagankmi .container .row .col-md-8 .card{
+  background: #f7e69a;
+}
+
+.bagankmi .container .row .col-md-8{
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.bagankmi .container .row .col-md-4 h2{
+  font-size: 35px;
+  color: #00272B;
+  text-align: left;
+  font-weight: 600;
+}
+
+.bagankmi .container .row .col-md-4 h5{
+  color: #00272B;
+  text-align: center;
+  font-weight: 600;
+}
+
+.bagankmi .container .row .col-md-8 h5{
+  color: #00272B;
+  text-align: center;
+  font-weight: 600;
+}
+
+.bagankmi .container .row .col-md-4 .card .card-body{
+  color: #00272B;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .bagankmi .container .row .col-md-4 h2{
+    font-size: 25px;
     text-align: center;
   }
 }
@@ -743,7 +944,7 @@ footer .text-center {
   }
 }
 
-/* halaman psdm */
+/* -------------- Halaman PSDM ----------------- */
 .headerpsdm{
   width: 100%;
   margin: auto;
@@ -784,6 +985,10 @@ footer .text-center {
   .psdm .container .row .col-md-8 h3 {
     font-size: 14px;
     text-align: center;
+  }
+
+  .headerpsdm .container h1{
+    font-size: 30px;
   }
 }
 
